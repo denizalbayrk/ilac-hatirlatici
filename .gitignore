@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+# Program çalışırken üretilen kişisel veri / çıktı dosyaları
+ilaclar.csv
+gunluk_plan.txt
