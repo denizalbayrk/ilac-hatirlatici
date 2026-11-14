@@ -1,7 +1,7 @@
 # GEP1316 – Ara Değerlendirme Ödevi 1: Süreç Belgesi
 
 **Proje:** İlaç / Tedavi Saatleri Hatırlatıcı Planlayıcı
-**Öğrenci:** _(Ad Soyad)_  **Dosya adı:** GEP1316_Odev1_AdSoyad
+**Öğrenci:** Deniz Albayrak  **Dosya adı:** GEP1316_Odev1_DenizAlbayrak
 **GitHub deposu:** https://github.com/denizalbayrk/ilac-hatirlatici
 
 ## 1. Problem ve kullanıcı
@@ -65,16 +65,16 @@ flowchart TD
 | saat 23:30, 00:00 dozu | YAKLAŞIYOR (30 dk) | aynı |
 | bozuk CSV satırı | atlanır, çökmez | atlandı |
 
-**En zor kısım:** Gece yarısını aşan dozların doğru sıralanması ve "ne kadar sonra / geciken" hesabı. Çözüm: ilk dozdan önce görünen saatlere 1440 dakika eklemek (`doz_dakikalari`). Bu mantığı ayrı testlerle (23:30 → 00:00 dozu) doğruladım. _(Kendi karşılaştığın bir hata olduysa buraya ekle; testlerde başarısız olan bir şey çıkmadı, bu yüzden uydurma hata yazılmadı.)_
+**En zor kısım:** Gece yarısını aşan dozların doğru sıralanması ve "ne kadar sonra / geciken" hesabı. Çözüm: ilk dozdan önce görünen saatlere 1440 dakika eklemek (`doz_dakikalari`). Bu mantığı ayrı testlerle (23:30 → 00:00 dozu) doğruladım. Testlerde başarısız olan bir senaryo çıkmadı; bu yüzden gerçekte yaşanmamış bir hata yazılmadı.
 
-## 6. Yansıtma (TASLAK – teslimden önce kendi cümlelerinle düzenle, 200–300 kelime)
+## 6. Yansıtma
 Bu ödevde bir problemi önce kâğıt üzerinde parçalara ayırmanın, kod yazmaktan daha önemli olduğunu öğrendim. İlaç saatlerini hesaplamak ilk bakışta basit görünse de gece yarısını geçen dozlar, "geciken" ile "yaklaşan" dozun ayrımı ve tedavi süresi bitince ilacın plandan çıkması gibi karar noktaları ortaya çıktı. Bunları if/elif/else yapılarıyla, tekrar eden işleri döngülerle, ortak işleri fonksiyonlarla çözmenin kodu okunabilir kıldığını gördüm.
 
 Yapay zekâyı "yardımcı geliştirici" gibi kullandım: gereksinimleri verdim, planı onayladım, ürettiği kodu çalıştırıp test ettim. YZ hızlıca çalışan bir iskelet çıkardı, ama doğrulama benim sorumluluğumdaydı. Elle çalıştırırken 24 saatlik döngü tasarımının bir sınırlaması olduğunu fark ettim ve bunu gizlemek yerine belgelemeyi seçtim. Girdi doğrulamanın (hatalı saat, negatif sayı, boş metin) programı çökmekten koruduğunu da somut olarak gördüm.
 
 YZ olmadan bu kapsamda bir uygulamayı, testlerle ve belgelerle birlikte yazmam benim için çok daha uzun sürerdi; tahminen yalnızca temel menüyü ve doz hesabını yapabilirdim. Dosyaya kaydetme, `unittest` ile otomatik test ve sahte girdiyle test yazma gibi konuları YZ'nin kodunu okuyarak öğrendim.
 
-Mesleğimde bu beceriyi, yinelenen ve hataya açık işleri (hatırlatma, takip, raporlama) küçük araçlara dönüştürmek için kullanabilirim. Bir YZ çıktısını körü körüne kabul etmeden test etmek ve gerekçesiyle kabul/red kararı vermek, sağlık gibi hata maliyetinin yüksek olduğu alanlarda özellikle önemlidir.
+Mesleğimde bu beceriyi, yinelenen ve hataya açık işleri (hatırlatma, takip, raporlama) küçük araçlara dönüştürmek için kullanabilirim. Bir YZ çıktısını körü körüne kabul etmeden test etmek ve gerekçesiyle kabul/red kararı vermek, sağlık gibi hata maliyetinin yüksek olduğu alanlarda özellikle önemlidir. Bu ödev, programlamayı ezberlenecek bir konu olarak değil, adım adım çözülen bir problem olarak görmemi sağladı. Bir sonraki projemde de önce planı yazmayı, sonra kodlamayı ve her aşamada testleri çalıştırmayı alışkanlık hâline getirmek istiyorum.
 
 ## 7. Öğrenci Yapay Zekâ Kullanım Beyan Formu
 | Alan | Yanıtınız |
@@ -82,8 +82,8 @@ Mesleğimde bu beceriyi, yinelenen ve hataya açık işleri (hatırlatma, takip,
 | Kullanılan YZ aracı/araçları | Claude Code (Claude Sonnet 5.5, Anthropic) |
 | Kullanma amacı | Kod üretimi, test yazımı, hata ayıklama, README ve rapor taslağı hazırlama |
 | Kontrol ve sorumluluk | Yapay zekâ tarafından üretilen içeriği gözden geçirdiğimi, gerekli düzeltmeleri yaptığımı ve teslim ettiğim çalışmanın doğruluğundan ve akademik dürüstlüğünden sorumlu olduğumu beyan ederim. |
-| Öğrencinin adı-soyadı | |
-| Tarih ve İmza | |
+| Öğrencinin adı-soyadı | Deniz Albayrak |
+| Tarih ve İmza | 14.11.2026 / |
 
 ## 8. Kaynakça (APA 7)
 Anthropic. (2026). *Claude* [Büyük dil modeli]. https://claude.ai
