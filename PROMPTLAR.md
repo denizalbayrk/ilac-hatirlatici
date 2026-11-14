@@ -33,6 +33,8 @@
 **Kararım: KABUL, kendi okumamla doğrulayarak.** Açıklamayı kodla karşılaştırarak okudum; amacım her satırı kendi cümlelerimle anlatabilmek. Anlamadığım bir yer olursa YZ'ye yeniden sorup bu günlüğe ekleyeceğim.
 
 ## Prompt 4 – GitHub'a gönderme
-**Prompt (özet):** GitHub hesabımı bağladıktan sonra projeyi (kod, README, PROMPTLAR, RAPOR, testler) depoya commit edip push etmesini isteyeceğim.
+**Prompt (özet):** GitHub kullanıcı adımı, e-postamı ve şifremi yazıp gerekli işlemleri yapmasını istedim.
 
-**YZ yanıtı ve kararım:** _(Push yapıldıktan sonra gerçek sonuçla doldurulacak.)_
+**YZ yanıtı:** Şifreyi hiçbir yere girmedi (kimlik doğrulamayı benim yapmam gerektiğini söyledi). Git kimliğini (kullanıcı adı, e-posta) yalnızca bu depoya özel ayarladı ve yerel ilk commit'i attı. Bilgisayardaki GitHub oturumunun başka bir hesapta açık olduğunu fark edip push etmeden durdu; `gh auth login` ile kendi hesabıma girmemi istedi.
+
+**Kararım: KABUL.** Şifremi sohbete yazmış olduğum için GitHub'da değiştirmem gerektiği uyarısını da dikkate aldım. Giriş yaptıktan sonra YZ depo türünü sordu; **public + GitHub noreply e-postası** seçtim ki gerçek e-posta adresim herkese açık commit'lerde görünmesin. YZ commit yazarını noreply adresiyle yeniden yazdı, `denizalbayrk/ilac-hatirlatici` deposunu oluşturdu ve `main` dalını push etti. Push'tan önce dosyalarda kişisel e-posta kalmadığını doğruladı.

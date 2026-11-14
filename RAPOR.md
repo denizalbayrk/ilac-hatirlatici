@@ -2,7 +2,7 @@
 
 **Proje:** İlaç / Tedavi Saatleri Hatırlatıcı Planlayıcı
 **Öğrenci:** _(Ad Soyad)_  **Dosya adı:** GEP1316_Odev1_AdSoyad
-**GitHub deposu:** _(depo bağlantısı eklenecek)_
+**GitHub deposu:** https://github.com/denizalbayrk/ilac-hatirlatici
 
 ## 1. Problem ve kullanıcı
 Düzenli ilaç kullanan kişiler (kronik hastalar, bakım verenler, yaşlı yakınları olan aileler) birden fazla ilacın farklı saatlerini aklında tutmakta zorlanır; bir dozu unutmak ya da çifte almak riskli olabilir. Uygulama, kullanıcının girdiği ilaç adı, ilk doz saati, günlük doz sayısı ve tedavi süresine göre doz saatlerini otomatik hesaplar, bugünün planını gösterir ve geciken / yaklaşan dozları hatırlatır. Program tıbbi tavsiye vermez, yalnızca saat düzenler; kişisel sağlık verisi toplamaz.
@@ -48,7 +48,7 @@ flowchart TD
 | 1 | Ödev görsellerini verip ilaç hatırlatıcı uygulaması istedim | Gereksinim eşlemeli plan | **Kabul**; "yeni güne geç" menüsü uygulamada eklendi |
 | 2 | Planı onaylayıp uygulamayı istedim | Kod, testler, belgeler | **Kabul, doğrulama sonrası**: 29 testi ve hatalı girdileri kendim çalıştırıp denedim |
 | 3 | Kodu satır satır açıklamasını istedim (sözlü doğrulama hazırlığı) | `KOD_REHBERI.md` | **Kabul**; kodla karşılaştırarak okudum |
-| 4 | Projeyi GitHub'a commit/push etmesini istedim | _(push sonrası doldurulacak)_ | |
+| 4 | GitHub bilgilerimi verip commit/push yapmasını istedim | Şifreyi girmedi, giriş için beni yönlendirdi; başka hesaba push etmeden durdu; depoyu oluşturup push etti | **Kabul**; depoyu public + noreply e-posta ile açtırdım |
 
 **YZ'nin eksik bıraktığı nokta:** Plan "ilk dozdan başlayan 24 saatlik döngü" olarak tasarlandığı için 22:00 başlangıçlı ilacın 10:00 dozu öğlen "BEKLİYOR" görünüyordu; "GECİKTİ" olması beklenebilirdi. Bunu elle çalıştırırken yakaladım; tasarımı basit tutmak için **kabul edip** README'ye "bilinen sınırlama" olarak yazdım.
 
